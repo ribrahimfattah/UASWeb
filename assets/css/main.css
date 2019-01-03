@@ -79,6 +79,12 @@
              
         }
     
+    .btn-info
+        {
+          background: #F5FFFA;
+          border : 0;
+          border-radius: 4px 
+        }
     .panel-utama
         {
             position:relative;

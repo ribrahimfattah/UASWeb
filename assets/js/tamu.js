@@ -37,7 +37,7 @@ function loadXML(file)
                         EMAIL= DT[0].getElementsByTagName("EMAIL")[0].childNodes[0].nodeValue;
                         ALAMAT = DT[0].getElementsByTagName("ALAMAT")[0].childNodes[0].nodeValue;
                         
-                        document.getElementById("tamu").innerHTML= NAMA;
+                        document.getElementById("tamu").innerHTML=NAMA;
                         document.getElementById("etamu").innerHTML=EMAIL;
                         document.getElementById("atamu").innerHTML=ALAMAT;
                         
