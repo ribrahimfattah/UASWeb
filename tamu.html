@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Kabupaten Magelang</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shorcut icon" href="img/logo.png">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/tamu.css">
+        <script type="text/javascript" src="assets/js/tamu.js"></script>
+    </head>
+                <!------------------------
+                *                       *
+                created by @ribrahimfattah
+                *                       *
+                ------------------------->
+    <body> 
+        <!--Header-->
+        <div id="header">
+            <center>
+            <img src="img/logo.png" id="logo" width="100px" height="100px">
+            <img src="img/logo-text.png" width="200px" height="98px">
+            </center>
+        </div> 
+        <!--header end-->
+
+        <!--main-->
+        <center><h2>BUKU TAMU</h2></center>
+		<div class="form">
+			<form action="fix.html" method="POST">
+				<div>
+					<label>Nama Lengkap:</label>
+					<input type="text" name="Nama" id="nama" />
+				</div>
+				<div>
+					<label>Email:</label>
+					<input type="email" name="Email" id="email" />
+				</div>
+				<div>
+					<label>Alamat:</label>
+					<textarea cols="40" rows="5" name="Alamat" id="alamat"></textarea>
+				</div>
+			</form>
+			<div>
+					<input type="submit" value="Masuk" class="tombol" onclick="validasi()">
+			</div>
+        </div>
+        <div class="list">
+            <a href="javascript:loadXML('assets/xml/daftarTamu.xml')">
+                <button class="tombol-list">Lihat Daftar Tamu</button>
+            </a>
+            <div id="tamu"></div>
+            <div id="etamu"></div>
+            <div id="atamu"></div>
+
+            <div id="tamu1"></div>
+            <div id="etamu1"></div>
+            <div id="atamu1"></div>
+            
+            <div id="tamu2"></div>
+            <div id="etamu2"></div>
+            <div id="atamu2"></div>
+
+            <div id="tamu3"></div>
+            <div id="etamu3"></div>
+            <div id="atamu3"></div>
+
+            <div id="tamu4"></div>
+            <div id="etamu4"></div>
+            <div id="atamu4"></div>
+        </div>
+        <!--main end-->
+    </body>
+</html>

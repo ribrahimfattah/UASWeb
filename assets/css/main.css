@@ -1,0 +1,201 @@
+    /**
+    * style.css
+    *
+    * - body
+    * - layout
+    */
+
+                /*-------------------------*\
+                
+                    created by @ribrahimfattah
+
+                \*-------------------------*/
+
+    /*************************************
+    * body
+    * mengatur background dan tag yang ada di body
+    */
+
+    /* BODY */
+    *{
+        box-sizing: border-box;
+        margin: 0 auto
+     }
+    
+    html,
+    body
+        {
+            background: url(../../img/bg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end
+        }
+    
+    p
+        {
+            color: #ddd
+        }
+    
+        /* LAYOUT */
+    #container
+        {
+            min-width: 100%;
+            position: relative;
+        }
+    
+    #header
+        {
+           padding: 10px;
+           margin-bottom: 100px
+        }
+    
+    #footer
+        {
+            height: 30px;
+            position: fixed;
+            padding: 7px;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background: #252525;
+            color: #ddd;
+            font-family: Arial, 'Helvetica', sans-serif
+        }
+    
+    #logo
+        {
+            border-right: 1px solid wheat;
+            padding-right: 3px
+        }
+    .btn
+        {
+            height: 80px;
+            width: 80px;
+            margin: 5px;
+            background: url(images/bgBtn.jpg);
+             
+        }
+    
+    .panel-utama
+        {
+            position:relative;
+            text-align:center;
+            width:100%;
+            margin-bottom: 10px
+        }
+        
+    .tengah
+        {
+            display: inline-block;
+            margin: 0 auto;
+            padding-bottom: 30px
+        }
+        
+    .tombol
+        {
+            float:left;
+            width:7vw;
+            height:7vw;
+            border-radius:15px;
+            text-align:left;
+            background-position:center;
+            border:solid;
+            border-color:#FFFF00;
+            margin: 1em 1em 3em 1em;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+     /* ketika cursor diarahkan ke tombol */   
+    .tombol:hover
+        {
+            transform: scale(1.1);
+            box-shadow:  0px 0px 31px 5px #00ff3b;
+            border-color:#00ff3b;
+        }
+    
+    .img-icon
+        {
+            width: 100%;
+            height: auto;
+        }
+    
+    /*==============================================
+                    MEDIA QUARES
+    ==============================================*/
+    
+    /* untuk ukuran 1080px ke bawah */
+    @media screen and (max-width: 1080px)
+        {
+            .tengah
+                {
+                    width: 50%;
+                    float: left;
+                }
+    
+            .tombol
+                {
+                    width: 80%;
+                    border-radius: 0;
+                    background: #A9A9A9;
+                    border-color: #ddd;
+                    padding-top: 5px;
+                    margin: 5px;
+                    margin-left: 50px; 
+                    height: 65px
+                }
+    
+            .img-icon
+                {
+                    width: 50px;
+                    height: 50px;
+                    float: left;
+                    margin-left: 5px
+                }
+            
+            html,
+            body
+                {
+                    font-size: 25px;
+                    height: auto
+                }
+        }
+    
+    /* untuk ukuran 780px ke bawah */
+    @media screen and (max-width: 780px)
+        {
+            .tengah
+                {
+                    width: 100%;
+                }
+    
+            .tombol
+                {
+                    width: 50%;
+                    align: center;
+                    border-radius: 0;
+                    background: #A9A9A9;
+                    border-color: #ddd;
+                    padding-top: 5px;
+                    margin: 5px;
+                    margin-left: 25%;
+                    height: 40px
+                }
+    
+            .img-icon
+                {
+                    width: 30px;
+                    height: 30px;
+                    float: left;
+                    margin-left: 5px
+                }
+            
+            html,
+            body
+                {
+                    font-size: 15px;
+                    height: auto
+                }   
+        }
